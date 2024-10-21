@@ -15,11 +15,11 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'mantra', component: MantraComponent, canActivate: [authGuard] },
+    { path: 'mantra', component: MantraComponent},//, canActivate: [authGuard] 
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'equipments', component: EquipmentComponent, canActivate: [authGuard] },
+    { path: 'equipments', component: EquipmentComponent },
     { path: 'payment', component: PaymentComponent },
     { path: 'paynow', component: PaynowComponent },
     { path: 'program', component: ProgramComponent, canActivate: [authGuard] }

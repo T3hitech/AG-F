@@ -69,10 +69,19 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                    <div *ngIf="!tokenExistence()">
                     <a class="nav-link" routerLink="signup">Signup</a>
+                </div>
                 </li>
                 <li class="nav-item">
+                    <div *ngIf="!tokenExistence()">
                     <a class="nav-link" routerLink="login">Login</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                    <div *ngIf="tokenExistence()">
+                    <a class="nav-link" (click)="doLogOut()">Logout</a>
+                </div>
                 </li>
             </ul>
             <!-- <form class="d-flex" role="search">
