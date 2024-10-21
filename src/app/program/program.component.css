@@ -1,0 +1,22 @@
+.tab-bg-white {
+    background-color: #fff;
+    border-top: 0 !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #d63384;
+    font-weight: bold;
+    box-shadow: 3px -3px 5px #ccc;
+}
+
+.nav-link {
+    color: #808080;
+}
+
+.nav-link:hover {
+    color: #d63384; 
+}
+
+.tab-content {
+    box-shadow: 0 -3px 20px #ccc;
+}

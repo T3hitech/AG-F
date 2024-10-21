@@ -1,0 +1,62 @@
+<section class="py-5">
+    <div class="container px-5" style="margin: 50px auto;">
+
+        <div class="row gx-5 align-items-center">
+
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Member Login</h2>
+
+                <div>
+                    <div>
+                        <p class="lead fw-normal text-muted mb-0">Our purpose is to facilitate learning and self
+                            discovery in an organic way.</p>
+                    </div>
+                    <br>
+                    <a class="btn bg-dark text-white rounded-3 btn-lg px-4" routerLink="/signup" href="">Sign up today
+                        to learn more</a>
+                </div>
+                <br>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="container signup-box">
+                    <h2>Login</h2>
+                    <div class="form-group p-2">
+                        <label for="username">Username</label>
+                        <input [(ngModel)]="username" type="text" id="username" name="username"
+                            placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="form-group p-2">
+                        <label for="password">Password</label>
+                        <input [(ngModel)]="password" type="password" id="password" name="password"
+                            placeholder="Enter your password" required>
+                    </div>
+                    {{resultMsg}}
+                    <button (click)="doLogin()" class="m-2 login-button" type="submit">Login</button>
+                    <div id="errorMessage" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- --------------------------------- -->
+<!-- <div class="container bg-success w-50 border border-dark">
+    <h2>Login</h2>
+    <div class="form-group p-2">
+        <label class="m-2 p-1" for="username">Username</label>
+        <input [(ngModel)]="username" type="text" id="username" name="username" placeholder="Enter your username"
+            required>
+    </div>
+
+    <div class="form-group p-2">
+        <label class="m-2 p-1" for="password">Password</label>
+        <input [(ngModel)]="password" type="password" id="password" name="password" placeholder="Enter your password"
+            required>
+    </div>
+    {{resultMsg}}
+    <button (click)="doLogin()" class="m-2" type="submit">Login</button>
+    <div id="errorMessage" class="error-message"></div>
+</div> -->
