@@ -40,6 +40,6 @@
 @media (min-width:720px) {
     .login-container {
         position: relative;
-        top: -100px;
+        top: -30px;
     }    
 }
