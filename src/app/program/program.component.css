@@ -20,3 +20,14 @@
 .tab-content {
     box-shadow: 0 -3px 20px #ccc;
 }
+
+.btn-transparent {
+    background: transparent;
+    border: 0;
+    color: blue;
+    font-weight: 600;
+}
+
+.btn-transparent:hover {
+    text-decoration: underline;
+}
