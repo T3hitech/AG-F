@@ -9,6 +9,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { PaynowComponent } from './paynow/paynow.component';
 import { ProgramComponent } from './program/program.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { authGuard } from './auth.guard';
 
 export const routes: Routes = [
@@ -22,7 +23,8 @@ export const routes: Routes = [
     { path: 'equipments', component: EquipmentComponent },
     { path: 'payment', component: PaymentComponent },
     { path: 'paynow', component: PaynowComponent },
-    { path: 'program', component: ProgramComponent, canActivate: [authGuard] }
+    { path: 'program', component: ProgramComponent, canActivate: [authGuard] },
+    { path: 'forgotpassword', component: ForgotpasswordComponent }
     // { path: 'mantra', component: MantraComponent, canActivate: [authGuard] },
 
 ];

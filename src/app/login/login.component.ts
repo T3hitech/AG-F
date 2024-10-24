@@ -4,11 +4,12 @@ import { ILoginuser } from '../loginuser';
 import { LoginuserService } from '../loginuser.service';
 import { MsgResponse } from '../msg-response';
 import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
